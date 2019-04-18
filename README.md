@@ -30,7 +30,7 @@ pip3 install -r requirements.txt
 
 ## Quick Start
 
-To reproduce the results in our [paper](https://arxiv.org/abs/1801.09851), you can first download the corpora and the embedding file from **[here](https://drive.google.com/file/d/1JHQJ9DKaEeSGZdA0Nmz9KCdtjUoJKXCb/view?usp=sharing)**, unzip the folder ```data_bioner_5/``` and put it under the main folder ```./```. Then the following running script can be used to run the model.
+To reproduce the results in our [paper](https://arxiv.org/abs/1801.09851), you can first download the corpora and the embedding file **[here](https://drive.google.com/file/d/1JHQJ9DKaEeSGZdA0Nmz9KCdtjUoJKXCb/view?usp=sharing)**, unzip the folder ```data_bioner_5/``` and put it under the main folder ```./```. Then the following running script can be used to run the model.
 ```
 ./run_lm-lstm-crf5.sh
 ```
@@ -89,7 +89,7 @@ withdrawal	O
 #### Embedding
 We initialize the word embedding matrix with pre-trained word vectors from Pyysalo et al., 2013. These word vectors are
 trained using the skip-gram model on the PubMed abstracts together with all the full-text articles
-from PubMed Central (PMC) and a Wikipedia dump. You can download the embedding files from [here](http://evexdb.org/pmresources/vec-space-models/).
+from PubMed Central (PMC) and a Wikipedia dump. You can download the embedding files [here](http://evexdb.org/pmresources/vec-space-models/).
 
 ## Usage
 
