@@ -59,7 +59,7 @@ More specifically, **empty lines** are used as separators between sentences, and
 ```
 -DOCSTART- -X- -X- -X- O
 ```
-Other lines contains words, labels and other fields. **Word** must be the **first** field, **label** mush be the **last**. For example,
+Other lines contains words, labels and other fields. **Word** must be the **first** field, **label** must be the **last**. For example,
 ```
 -DOCSTART- -X- -X- -X- O
 
