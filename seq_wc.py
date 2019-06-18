@@ -76,6 +76,9 @@ if __name__ == "__main__":
             tmp = line.split()
             lines.append(tmp[0])
 
+        if len(lines) > 0:
+            features.append(utils.read_features(lines))
+
     for idx in range(args.dataset_no):
         print('annotating the entity type', idx)
         with open(args.output_file+str(idx)+'.txt', 'w') as fout:
