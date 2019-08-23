@@ -197,16 +197,14 @@ factor O
 ## Citation
 If you find the implementation useful, please cite the following paper:
 ```
-@article{doi:10.1093/bioinformatics/bty869,
-author = {Wang, Xuan and Zhang, Yu and Ren, Xiang and Zhang, Yuhao and Zitnik, Marinka and Shang, Jingbo and Langlotz, Curtis and Han, Jiawei},
-title = {Cross-type Biomedical Named Entity Recognition with Deep Multi-Task Learning},
-journal = {Bioinformatics},
-volume = {},
-number = {},
-pages = {bty869},
-year = {2018},
-doi = {10.1093/bioinformatics/bty869},
-URL = {http://dx.doi.org/10.1093/bioinformatics/bty869},
-eprint = {/oup/backfile/content_public/journal/bioinformatics/pap/10.1093_bioinformatics_bty869/1/bty869.pdf}
+@article{wang2018cross,
+  title={Cross-type biomedical named entity recognition with deep multi-task learning},
+  author={Wang, Xuan and Zhang, Yu and Ren, Xiang and Zhang, Yuhao and Zitnik, Marinka and Shang, Jingbo and Langlotz, Curtis and Han, Jiawei},
+  journal={Bioinformatics},
+  volume={35},
+  number={10},
+  pages={1745--1752},
+  year={2019},
+  publisher={Oxford University Press}
 }
 ```
