@@ -340,61 +340,8 @@ if __name__ == "__main__":
                        dev_rec))
                 track_list.append({'loss': epoch_loss, 'dev_f1': dev_f1, 'dev_acc': dev_acc})
 
-        # else:
-
-        #     dev_acc = evaluator.calc_score(ner_model, dev_dataset_loader)
-
-        #     if dev_acc > best_acc:
-        #         patience_count = 0
-        #         best_acc = dev_acc
-                
-        #         test_acc = evaluator.calc_score(ner_model, test_dataset_loader)
-
-        #         track_list.append(
-        #             {'loss': epoch_loss, 'dev_acc': dev_acc, 'test_acc': test_acc})
-
-        #         print(
-        #             '(loss: %.4f, epoch: %d, dev acc = %.4f, acc on test= %.4f), saving...' %
-        #             (epoch_loss,
-        #              args.start_epoch,
-        #              dev_acc,
-        #              test_acc))
-
-        #         try:
-        #             utils.save_checkpoint({
-        #                 'epoch': args.start_epoch,
-        #                 'state_dict': ner_model.state_dict(),
-        #                 'optimizer': optimizer.state_dict(),
-        #                 'f_map': f_map,
-        #                 'l_map': l_map,
-        #                 'c_map': c_map,
-        #                 'in_doc_words': in_doc_words
-        #             }, {'track_list': track_list,
-        #                 'args': vars(args)
-        #                 }, args.checkpoint + 'cwlm_lstm_crf')
-        #         except Exception as inst:
-        #             print(inst)
-
-        #     else:
-        #         patience_count += 1
-        #         print('(loss: %.4f, epoch: %d, dev acc = %.4f)' %
-        #               (epoch_loss,
-        #                args.start_epoch,
-        #                dev_acc))
-        #         track_list.append({'loss': epoch_loss, 'dev_acc': dev_acc})
-
         print('epoch: ' + str(args.start_epoch) + '\t in ' + str(args.epoch) + ' take: ' + str(
             time.time() - start_time) + ' s')
 
         if patience_count >= args.patience and args.start_epoch >= args.least_iters:
             break
-
-    #print best
-    # if 'f' in args.eva_matrix:
-    #     eprint(args.checkpoint + ' dev_f1: %.4f dev_rec: %.4f dev_pre: %.4f dev_acc: %.4f test_f1: %.4f test_rec: %.4f test_pre: %.4f test_acc: %.4f\n' % (dev_f1, dev_rec, dev_pre, dev_acc, test_f1, test_rec, test_pre, test_acc))
-    # else:
-    #     eprint(args.checkpoint + ' dev_acc: %.4f test_acc: %.4f\n' % (dev_acc, test_acc))
-
-    # printing summary
-    # print('setting:')
-    # print(args)
