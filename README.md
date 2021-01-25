@@ -89,7 +89,7 @@ withdrawal	O
 #### Embedding
 We initialize the word embedding matrix with pre-trained word vectors from Pyysalo et al., 2013. These word vectors are
 trained using the skip-gram model on the PubMed abstracts together with all the full-text articles
-from PubMed Central (PMC) and a Wikipedia dump. You can download the embedding files [here](http://evexdb.org/pmresources/vec-space-models/).
+from PubMed Central (PMC) and a Wikipedia dump. You can download the embedding file [here](https://drive.google.com/file/d/1JHQJ9DKaEeSGZdA0Nmz9KCdtjUoJKXCb/view?usp=sharing).
 
 ## Usage
 
