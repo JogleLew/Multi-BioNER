@@ -9,9 +9,10 @@ The implementation is based on the PyTorch library. Our model collectively train
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Data](#data)
-- [Usage](#usage)
+- [Running](#running)
 - [Benchmarks](#benchmarks)
 - [Prediction](#prediction)
+- [Citation](#citation)
 
 ## Installation
 
@@ -91,7 +92,7 @@ We initialize the word embedding matrix with pre-trained word vectors from Pyysa
 trained using the skip-gram model on the PubMed abstracts together with all the full-text articles
 from PubMed Central (PMC) and a Wikipedia dump. You can download the embedding file [here](https://drive.google.com/file/d/1JHQJ9DKaEeSGZdA0Nmz9KCdtjUoJKXCb/view?usp=sharing).
 
-## Usage
+## Running
 
 ```train_wc.py``` is the script for our multi-task LSTM-CRF model.
 The usages of it can be accessed by
