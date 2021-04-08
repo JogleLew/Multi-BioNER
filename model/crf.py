@@ -287,7 +287,7 @@ class CRFLoss_vb(nn.Module):
 
         # calculate sentence score
         tg_energy = torch.gather(scores.view(seq_len, bat_size, -1), 2, target).view(seq_len, bat_size)  # seq_len * bat_size
-        tg_energy = tg_energy.masked_select(mask).sum()
+        tg_energy = tg_energy.masked_select(mask.bool()).sum()
 
         # calculate forward partition score
 
